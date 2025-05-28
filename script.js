@@ -1,6 +1,19 @@
 
-        // hier fehlt noch die def von supabase ....
-        
+const axios = require('axios');
+
+const url = 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js';
+
+axios.get(url)
+  .then((response) => {
+    // Hier können Sie den heruntergeladenen Inhalt als JavaScript-Modul importieren
+    const supabase = require(response.data);
+    // Jetzt können Sie die supabase-Variable verwenden
+    console.log(supabase);
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+
         const Database = iniSupabase();
 
         //curl [https://nik2890.github.io/AutoPut/index.html](https://nik2890.github.io/AutoPut/index.htm)
