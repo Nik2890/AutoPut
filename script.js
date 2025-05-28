@@ -1,12 +1,7 @@
 
+        // hier fehlt noch die def von supabase ....
+        
         const Database = iniSupabase();
-
-        let test = lesen()
-
-        function onload() {
-            einfügen()
-
-        }
 
         //curl [https://nik2890.github.io/AutoPut/index.html](https://nik2890.github.io/AutoPut/index.htm)
         
